@@ -1,0 +1,586 @@
+nbody {
+    width: 100%;
+    background-color: #71675c;
+    font-family: "myriad-pro";
+    color: #003769;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: .025em;
+}
+
+p, ul, h1, h2, h3 {
+    margin-top: 0;
+}
+
+h1,
+h1 a,
+h1 a:visited {
+    font-family: "trajan-pro-3";
+    font-size: 56px;
+    color: rgba(255,255,255,0.27);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.lt-ie9 h1,
+.lt-ie9 h1 a,
+.lt-ie9 h1 a:visited {
+    color: #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=27)";
+}
+
+.lt-ie8 h1,
+.lt-ie8 h1 a,
+.lt-ie8 h1 a:visited {
+    color: #fff;
+    filter: alpha(opacity=27);
+}
+
+#top {
+    width: 100%;
+}
+
+.school-law #top,
+.meet-us #top
+{
+    background-color: #645a4e;
+}
+
+#school-law {
+    width: 1113px;
+    height: 288px;
+    background: transparent url(../img/bg/school-law.jpg) left top no-repeat;
+    position: relative;
+}
+
+.school-law #school-law {
+    height: 259px;
+    background-image: url(../img/bg/school-law-main.jpg);
+}
+
+.schools-admin #school-law {
+    background-image: url(../img/bg/school-law-admin.jpg);
+}
+
+.labor #school-law {
+    background-image: url(../img/bg/school-law-labor.jpg);
+}
+
+.student-rights #school-law {
+    background-image: url(../img/bg/school-law-civil.jpg);
+}
+
+.special-ed #school-law {
+    background-image: url(../img/bg/school-law-special-ed.jpg);
+}
+
+.real-estate #school-law {
+    background-image: url(../img/bg/school-law-real-estate.jpg);
+}
+
+.business-services #school-law {
+    background-image: url(../img/bg/school-law-business.jpg);
+}
+
+.sub-nav {
+    position: absolute;
+    margin: 0;
+    list-style-type: none;
+}
+
+#school-law .sub-nav {
+    top: 85px;
+}
+
+#municipal-law .sub-nav {
+    top: 80px;
+}
+
+.sub-nav li {
+    line-height: 1.1;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.sub-nav a,
+.sub-nav a:visited {
+    color: #fff;
+}
+
+.sub-nav a:hover,
+body.schools-admin .sub-nav a.schools-admin,
+body.labor .sub-nav a.labor,
+body.student-rights .sub-nav a.student-rights,
+body.special-ed .sub-nav a.special-ed,
+body.real-estate .sub-nav a.real-estate,
+body.business-services .sub-nav a.business-services,
+body.muni-governance .sub-nav a.muni-governance,
+body.land-use .sub-nav a.land-use,
+body.public-works .sub-nav a.public-works,
+body.public-safety .sub-nav a.public-safety,
+body.serosky .sub-nav a.serosky,
+body.andree .sub-nav a.andree,
+body.baisch .sub-nav a.baisch,
+body.ganson .sub-nav a.ganson,
+body.foster .sub-nav a.foster,
+body.haggard .sub-nav a.haggard,
+body.howell .sub-nav a.howell,
+body.miller .sub-nav a.miller,
+body.porter .sub-nav a.porter,
+body.rorick .sub-nav a.rorick,
+body.schulkin .sub-nav a.schulkin,
+body.wilson .sub-nav a.wilson,
+body.nelson .sub-nav a.nelson,
+body.edwards .sub-nav a.edwards,
+body.holler .sub-nav a.holler,
+body.mcelroy .sub-nav a.mcelroy,
+body.okantey .sub-nav a.okantey,
+body.walker .sub-nav a.walker,
+body.sands .sub-nav a.sands,
+body.watts .sub-nav a.watts,
+
+{
+    color: #5e88a2;
+    text-decoration: none;
+}
+
+#school-law h1 {
+    position: absolute;
+    top: 130px;
+    left: 106px;
+    letter-spacing: -1px;
+    line-height: 0.85;
+    margin: 0;
+}
+
+#school-law h1 span {
+    display: block;
+    text-indent: 156px;
+}
+
+body.school-law #school-law h1 {
+    top: 13px;
+}
+
+header {
+    width: 100%;
+    background: #fff url(../img/bg/header.png) top repeat-x;
+    position:relative;
+    height: 179px;
+}
+
+.wrap {
+    width: 1013px;
+    margin: 0 auto;
+}
+
+header .wrap {
+    background: transparent url(../img/bg/header-inner.png) top repeat-x;
+    height: 179px;
+    position: relative;
+}
+
+header .line {
+    background-color: #003769;
+    width: 50%;
+    min-width: 595px;
+    bottom: 27px;
+    left: 0;
+    position: absolute;
+    height: 1.2px;
+}
+
+a, a:visited {
+    color: #5e88a2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+a#logo {
+    display: block;
+    width: 500px;
+    height: 128px;
+    background: transparent url(../img/bg/logo.png) left top no-repeat;
+    position: absolute;
+    left: 507px;
+    top: 29px;
+    text-align: left;
+    text-indent: -9999px;
+}
+
+nav {
+    position: absolute;
+    bottom: 28px;
+    left: 3px;
+}
+
+nav a {
+    color: #5e88a2;
+    font: 16px/1 'myriad-pro';
+    text-decoration: none;
+    padding: 2px 7px;
+    display: inline-block;
+}
+
+nav a:hover,
+body.school-law nav a.nav-school-law,
+body.municipal-law nav a.nav-muni-law,
+body.meet-us nav a.nav-meet-us,
+body.join-us nav a.nav-join-us,
+body.resources nav a.nav-resources,
+body.contact-us nav a.nav-contact-us
+
+{
+    color: #0a3f6d;
+    text-decoration: none;
+}
+
+#bottom {
+    background: #446d8f;
+    width: 100%;
+}
+
+.municipal-law #top, .contact-us #top, .resources #top, .credits #top {
+    background: #386389;
+}
+
+#municipal-law {
+    background: transparent url(../img/bg/municipal-law.jpg) left top no-repeat;
+    position: relative;
+    height: 260px;
+    width: 1147px;
+}
+
+#contact-us {
+    background: transparent url(../img/bg/contact-us.jpg) left top no-repeat;
+    position: relative;
+    height: 259px;
+    width: 1013px;
+}
+
+#join-us {
+    background: transparent url(../img/bg/school-law-civil.jpg) left top no-repeat;
+    position: relative;
+    height: 259px;
+    width: 1013px;
+}
+
+#resources {
+    background: transparent url(../img/bg/contact-us.jpg) left top no-repeat;
+    position: relative;
+    height: 259px;
+    width: 1013px;
+}
+
+#credits {
+    height: 132px;
+    background-color: #003768;
+    position: relative;
+}
+
+.home #municipal-law {
+    background-image: url(../img/bg/municipal-law-home.jpg);
+    margin-left: -55px;
+    height: 290px;
+    width: 1067px;
+}
+
+.muni-governance #municipal-law {
+    background-image: url(../img/bg/municipal-law-admin.jpg);
+}
+
+.land-use #municipal-law {
+    background-image: url(../img/bg/municipal-law-land-use.jpg);
+}
+
+.public-works #municipal-law {
+    background-image: url(../img/bg/municipal-law-public-works.jpg);
+}
+
+.labor #municipal-law {
+    background-image: url(../img/bg/municipal-law-labor.jpg);
+}
+
+.public-safety #municipal-law {
+    background-image: url(../img/bg/municipal-law-safety.jpg);
+}
+
+#meet-us {
+    width: 1100px;
+    background: transparent url(../img/bg/meet-us.jpg) left top no-repeat;
+    height: 259px;
+    position: relative;
+}
+
+#meet-us .attorneys {
+    width: 295px;
+    float: left;
+    padding-left: 40px;
+    margin-top: 66px;
+    position: relative;
+}
+
+.attorneys .sub-nav,
+.staff .sub-nav,
+.of counsil .sub-nav
+{
+    position: relative;
+    float: left;
+    width: 120px;
+    margin-right: 25px;
+    display: block;
+    padding: 0;
+}
+
+#meet-us .staff {
+    float: left;
+    margin-top: 66px;
+    position: relative;
+
+}
+
+#meet-us h1, #credits h1 {
+    position: absolute;
+    top: 13px;
+    left: 126px;
+    letter-spacing: 1px;
+    line-height: 0.85;
+    font-size: 52px;
+    margin: 0;
+}
+
+#join-us h1 {
+    position: absolute;
+    top: 93px;
+    left: 60px;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    font-size: 52px;
+    margin: 0;
+}
+
+#resources h1, #contact-us h1 {
+    position: absolute;
+    top: 93px;
+    left: 60px;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    font-size: 52px;
+    margin: 0;
+}
+
+#credits h1 {
+    top: 64px;
+    left: 100px;
+}
+
+#meet-us img {
+    position: absolute;
+    top: 28px;
+    left: 662px;
+    border: 1px solid #fff;
+}
+
+.attorneys h3, .staff h3, .of counsil h3{
+    color: #9e9388;
+    margin: 0;
+}
+
+.attorneys .sub-nav li, .staff .sub-nav li, .of counsil .sub-nav li {
+    margin: 0 0 3px;
+}
+
+#municipal-law h1 {
+    position: absolute;
+    top: 25px;
+    left: 126px;
+    letter-spacing: 1px;
+    line-height: 0.85;
+    font-size: 52px;
+    margin: 0;
+}
+
+.home #municipal-law h1 {
+    bottom: 140px;
+    right: 92px;
+    top: auto;
+    left: auto;
+}
+
+#municipal-law h1 span {
+    display: block;
+    text-indent: 104px;
+}
+
+.home #munical-law h1 span {
+    text-indent: 70px;
+}
+
+#content .main {
+    background: #fff;
+    padding: 40px 260px 40px 80px;
+}
+
+#content .main.subpage {
+    padding: 40px 30px 40px 60px;
+}
+
+.subpage-left {
+    width: 618px;
+    float: left;
+}
+
+.meet-us .subpage-left {
+    width: 588px;
+}
+
+.contact-us .subpage-left {
+    width: 690px;
+}
+
+.subpage-right {
+    width: 240px;
+    float: right;
+}
+
+.meet-us .subpage-right {
+    width: 236px;
+    padding-top: 20px;
+}
+
+.contact-us .subpage-right {
+    width: 205px;
+}
+
+#content .main.credits {
+    padding: 48px 28px 28px 66px;
+}
+
+.credits-left {
+    width: 435px;
+    float: left;
+}
+
+.credits-right {
+    width: 435px;
+    float: right;
+}
+
+.main.credits img {
+    float: left;
+    margin: 0 15px 32px 0;
+}
+
+.meet-us #content .main.subpage .subpage-right p,
+.contact-us #content .main.subpage .subpage-right p
+{
+    line-height: 1.42;
+}
+
+.subpage-right ul {
+    list-style-type: none;
+    font-style: italic;
+    line-height: 1.3;
+    padding: 0;
+}
+
+.subpage-right li {
+    margin-bottom: 8px;
+}
+
+#content .main p {
+    font: normal 18px/30px 'myriad-pro', sans-serif;
+    color: #003769;
+}
+
+#content .main.subpage p,
+#content .main.credits p {
+    font: normal 14px/24px 'myriad-pro', sans-serif;
+}
+
+footer {
+    font: 12px/1.5 'myriad-pro';
+    width: 100%;
+    background: transparent url(../img/bg/footer-wrap.png) left top repeat-x;
+}
+
+.home footer {
+    background-image: url(../img/bg/footer.png);
+}
+
+footer .wrap {
+    background: #4d4133 url(../img/bg/footer.png) left top repeat-x;
+    min-height: 230px;
+    color: #8d816a;
+    width: 944px;
+    padding: 32px 26px 0 43px;
+    position: relative;
+}
+
+footer .box {
+    width: 185px;
+}
+
+footer .left.box {
+    float: left;
+}
+
+footer .right.box {
+    float: right;
+}
+
+footer blockquote {
+    width: 690px;
+    padding: 45px 0px 45px 62px;
+    background: transparent url(../img/bg/quote.png) left top no-repeat;
+    font: 20px/1.5 'myriad-pro', sans-serif;
+    font-style: italic;
+    color: #699dbc;
+    clear: both;
+    display: block;
+    margin: 0 0 0 82px;
+}
+
+footer blockquote small {
+    font: 16px/1.875 'myriad-pro', sans-serif;
+}
+
+br.clear {
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+ul.directions {
+    list-style-type: none;
+    width: 305px;
+    float: left;
+}
+
+html.touch .wrap {
+    overflow: hidden;
+}
+
+html.touch body.meet-us .wrap {
+    overflow: visible;
+}
+
+html.touch body.meet-us #meet-us {
+    width: 1013px;
+}

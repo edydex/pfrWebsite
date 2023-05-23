@@ -1,0 +1,6 @@
+Adding attorney bio
+
+- Create bio page "first-last.php" at root
+- Link to PDF of resume in \resumes
+- Add name to \css\main.css: Look for ".sub-nav a:hover" and copy format for new bio
+- Add name to \inc\meet-us-subnav.php

@@ -1,0 +1,393 @@
+<browsers>
+    <browser id="Safari2" parentID="Safari1Plus">
+        <controlAdapters>
+            <adapter controlType="System.Web.UI.WebControls.Menu"
+                     adapterType="" />
+        </controlAdapters>
+    </browser>
+
+    <browser refID="Docomo">
+        <capabilities>
+            <capability name="preferredDBCSQueryStringEncoding"     value="unicode" />
+        </capabilities>
+    </browser>
+
+    <browser refID="Nokia">
+        <capabilities>
+            <capability name="requires303Redirect"                  value="true" />
+        </capabilities>
+    </browser>
+
+    <browser refID="PIE5Plus">
+        <capabilities>
+                <capability name="canInitiateVoiceCall"              value="true" />
+            <capability name="requires303Redirect"                  value="true" />
+        </capabilities>
+    </browser>
+   
+	<browser id="NokiaWAP2" parentID="Nokia">
+        <identification>
+            <userAgent match=".*" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="canSendMail"                          value="true" />
+            <capability name="rendersBreaksAfterWmlAnchor"          value="false" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="preferredImageMime"                   value="image/gif" />
+            <capability name="preferredRenderingMime"               value="application/xhtml+xml" />
+            <capability name="preferredRenderingType"               value="xhtml-basic" />
+            <capability name="supportsRedirectWithCookie"           value="true" />
+            <capability name="cookies"                              value="true" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="requires303Redirect"                  value="true" />
+		</capabilities>
+    </browser>
+
+	<browser id="NokiaWML11" parentID="NokiaWAP2">
+        <identification>
+            <userAgent match="Nokia\s*3330/|Nokia\s*3350/|Nokia\s*3410/|Nokia\s*3610/|Nokia\s*5210/|Nokia\s*5510/|Nokia\s*6250/|Nokia\s*7110/" />
+        </identification>
+		<capabilities>
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml11" />
+		</capabilities>
+	</browser>
+
+	<browser id="NokiaWML12" parentID="NokiaWAP2">
+        <identification>
+            <userAgent match="Nokia\s*3120/|Nokia\s*3510|Nokia\s*3560/|Nokia\s*3590/|Nokia\s*6100/|Nokia\s*6310|Nokia\s*6610/|Nokia\s*7210/|Nokia\s*7250/|Nokia\s*8910|Nokia\s*N-Gage/|Nokia\s*5100/|Nokia\s*3520/" />
+        </identification>
+		<capabilities>
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+		</capabilities>
+	</browser>
+
+	<browser id="NokiaxhtmlMP" parentID="NokiaWAP2">
+        <identification>
+            <userAgent match="Nokia\s*6111/|Nokia\s*6810/" />
+        </identification>
+		<capabilities>
+            <capability name="preferredRenderingMime"               value="application/vnd.wap.xhtml+xml" />
+            <capability name="preferredRenderingType"               value="xhtml-mp" />
+		</capabilities>
+	</browser>
+	
+	<!-- Mozilla browser in Nokia-->
+	<browser id="NokiaMozilla" parentID="Mozilla">
+        <identification>
+            <userAgent match="Nokia" />
+        </identification>
+		<capabilities>
+            <capability name="isMobileDevice"                       value="true" />
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="supportsMultilineTextBoxDisplay"      value="true" />
+		</capabilities>
+	</browser>	
+
+	<!-- IE5 browser in Nokia -->
+	<browser id="NokiaIE5" parentID="IE50">
+        <identification>
+            <userAgent match="Nokia" />
+        </identification>
+		<capabilities>
+     	        <capability name="isMobileDevice"                       value="true" />
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="supportsMultilineTextBoxDisplay"      value="true" />
+		</capabilities>
+	</browser>
+    
+	<browser id="MIB" parentID="Default">
+        <identification>
+            <userAgent match="MIB/" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="canSendMail"                          value="true" />
+            <capability name="inputType"                            value="telephoneKeypad" />
+            <capability name="isColor"                              value="true" />
+            <capability name="isMobileDevice"                       value="true" />
+            <capability name="mobileDeviceManufacturer"             value="Motorola" />
+            <capability name="preferredImageMime"                   value="image/gif" />
+            <capability name="preferredRenderingMime"               value="application/xhtml+xml" />
+            <capability name="preferredRenderingType"               value="xhtml-basic" />
+            <capability name="rendersBreaksAfterWmlAnchor"          value="true" />
+            <capability name="rendersBreaksAfterWmlInput"           value="true" />
+            <capability name="rendersWmlDoAcceptsInline"            value="true" />
+            <capability name="requires303Redirect"                  value="true" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="true" />
+            <capability name="requiresNoSoftkeyLabels"              value="true" />
+            <capability name="requiresPostRedirectionHandling"      value="true" />
+            <capability name="requiresSpecialViewStateEncoding"     value="true" />
+            <capability name="requiresUniqueFilePathSuffix"         value="true" />
+            <capability name="SupportsBold"                         value="true" />
+            <capability name="SupportsItalic"                       value="true" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+        </capabilities>
+    </browser>
+
+	<browser id="EricssonWAP2" parentID="Ericsson">
+        <identification>
+            <userAgent match=".*" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="canSendMail"                          value="true" />
+            <capability name="rendersBreaksAfterWmlAnchor"          value="false" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="preferredImageMime"                   value="image/gif" />
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+            <capability name="supportsRedirectWithCookie"           value="true" />
+            <capability name="cookies"                              value="true" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="requires303Redirect"                  value="true" />
+		</capabilities>
+    </browser>
+
+    <!-- Japan "DoCoMo Foma" DoCoMo -->
+    <browser id="DoCoMoFoma" parentID="DoCoMo">
+        <identification>
+            <userAgent match="^DoCoMo/2" />
+        </identification>
+        <capabilities>
+            <capability name="supportsCacheControlMetaTag"          value="false" />
+            <capability name="cookies"                              value="true" />
+            <capability name="supportsRedirectWithCookie"           value="true" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="requiresNoescapedPostUrl"             value="true" />
+            <capability name="supportsMultilineTextBoxDisplay"      value="true" />
+         </capabilities>
+    </browser>
+    <browser id="DoCoMoFomaFull" parentID="Netscape4">
+        <identification>
+            <userAgent match="FOMA" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="inputType"                            value="telephoneKeypad" />
+            <capability name="isMobileDevice"                       value="true" />
+            <capability name="supportIModeSymbols"                  value="true" />
+         </capabilities>
+    </browser>
+    <browser refID="Up">
+        <capabilities>
+            <capability name="requires303Redirect"                  value="true" />
+        </capabilities>
+    </browser>
+
+    <browser id="UpNew" parentID="Up">
+        <identification>
+            <userAgent match=".*" />
+        </identification>
+        <capabilities>
+            <capability name="cookies"                              value="true" />
+            <capability name="supportsCacheControlMetaTag"          value="false" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="canSendMail"                          value="true" />
+            <capability name="supportsMultilineTextBoxDisplay"      value="true" />
+            <capability name="preferredImageMime"                   value="image/gif" />
+            <capability name="preferredRenderingMime"               value="application/vnd.wap.xhtml+xml" />
+            <capability name="preferredRenderingType"               value="xhtml-mp" />
+            <capability name="isColor"                              value="true" />
+            <capability name="supportsRedirectWithCookie"           value="true" />
+        </capabilities>
+        <controlAdapters markupTextWriterType="System.Web.UI.XhtmlTextWriter" />
+    </browser>
+    
+    <browser id="OPWVSDKNew" parentID="OPWVSDK">
+        <identification>
+            <userAgent match="^OPWV-SDK.*UP.Browser/" />
+        </identification>
+        <capabilities>
+            <capability name="preferredRenderingMime"               value="application/vnd.wap.xhtml+xml" />
+            <capability name="preferredRenderingType"               value="xhtml-mp" />
+            <capability name="canSendMail"                          value="true" />
+        </capabilities>   
+        <controlAdapters markupTextWriterType="System.Web.UI.XhtmlTextWriter" />
+    </browser>
+
+    <!-- BlackBerry RIM Browser -->
+    <browser id="RIM40" parentID="Default">
+        <identification>
+            <userAgent match="BlackBerry" />
+        </identification>
+        <capabilities>
+            <capability name="isColor"                              value="true" />
+            <capability name="requiresLeadingPageBreak"             value="true" />
+            <capability name="requiresUniqueFilePathSuffix"         value="true" />
+            <capability name="supportsBold"                         value="true" />
+            <capability name="supportsFontSize"                     value="true" />
+            <capability name="supportsImageSubmit"                  value="true" />
+            <capability name="supportsItalic"                       value="true" />
+            <capability name="requires303Redirect"                  value="true" />
+        </capabilities>
+    </browser>
+    
+    <!-- Japan "au by KDDI" Up.Browser -->
+    <browser id="KDDIUp" parentID="UpNew">
+        <identification>
+            <userAgent match="KDDI" />
+        </identification>
+        <capabilities>
+            <capability name="preferredDBCSQueryStringEncoding"     value="unicode" />
+            <capability name="preferredRequestEncoding"             value="shift-jis" />
+            <capability name="preferredResponseEncoding"            value="shift-jis" />
+            <capability name="supportsCacheControlMetaTag"          value="false" />
+        </capabilities>
+    </browser>
+
+    <!-- Japan "au by KDDI" Opera Full Browser -->
+    <browser id="KDDIOpera7to9" parentID="Opera7to9">
+        <identification>
+            <userAgent match="KDDI" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="isMobileDevice"                       value="true" />
+            <capability name="inputType"                            value="telephoneKeypad" />
+            <capability name="optimumPageWeight"                    value="700" />
+        </capabilities>
+    </browser>
+
+    <!-- Vodafone Up.Browser -->
+    <browser id="VodafoneUP" parentID="UpNew">
+		<identification>
+			<userAgent match="^Vodafone/" />
+		</identification>
+	<capabilities>
+            <capability name="canInitiateVoiceCall"                 value="true" />
+            <capability name="canSendMail"                          value="true" />
+            <capability name="inputType"                            value="telephoneKeypad" />
+            <capability name="requiresAdaptiveErrorReporting"       value="true" />
+            <capability name="rendersBreakBeforeWmlSelectAndInput"  value="true" />
+            <capability name="rendersWmlDoAcceptsInline"            value="false" />
+            <capability name="rendersWmlSelectsAsMenuCards"         value="true" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="true" />
+            <capability name="requiresNoescapedPostUrl"             value="true" />
+            <capability name="requiresPostRedirectionHandling"      value="true" />
+            <capability name="supportsAccesskeyAttribute"           value="true" />
+            <capability name="supportsRedirectWithCookie"           value="true" />
+            <capability name="supportsStyleElement"                 value="true" />
+            <capability name="supportsMultilineTextBoxDisplay"      value="true" />
+        </capabilities>
+        <controlAdapters markupTextWriterType="System.Web.UI.XhtmlTextWriter" />
+    </browser>
+
+
+    <!-- KOREA KUN browser -->
+    <browser id="Kun" parentID="Mozilla">
+        <identification>
+            <userAgent match="KUN" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="True" />
+            <capability name="cookies"                              value="True" />
+            <capability name="isMobileDevice"                       value="true" />
+            <capability name="maximumHrefLength"                    value="512" />
+            <capability name="maximumRenderedPageSize"              value="1024" />
+            <capability name="preferredImageMime"                   value="image/jpeg" />
+            <capability name="rendersBreaksAfterHtmlLists"          value="False" />
+            <capability name="requiresDBCSCharacter"                value="True" />
+            <capability name="requiresLeadingPageBreak"             value="True" />
+            <capability name="requiresUniqueFilePathSuffix"         value="True" />
+            <capability name="screenBitDepth"                       value="24" />
+            <capability name="screenCharactersHeight"               value="23" />
+            <capability name="screenCharactersWidth"                value="40" />
+            <capability name="screenPixelsHeight"                   value="368" />
+            <capability name="screenPixelsWidth"                    value="96" />
+            <capability name="supportsAccesskeyAttribute"           value="True" />
+            <capability name="supportsCss"                          value="False" />
+            <capability name="supportsDivNoWrap"                    value="False" />
+            <capability name="supportsFontName"                     value="False" />
+            <capability name="supportsFontSize"                     value="False" />
+            <capability name="supportsInputIStyle"                  value="True" />
+            <capability name="supportsInputMode"                    value="True" />
+            <capability name="tables"                               value="True" />
+        </capabilities>
+    </browser>
+
+    <browser id="InfrawareSamSung" parentID="SKTDevicesSamSung">
+        <identification>
+            <userAgent name="browserType" match="(35|15|25)" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="True" />
+            <capability name="cookies"                              value="True" />
+            <capability name="isColor"                              value="True" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+            <capability name="rendersBreaksAfterWmlInput"           value="True" />
+            <capability name="rendersWmlSelectsAsMenuCards"         value="True" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="True" />
+            <capability name="supportsEmptyStringInCookieValue"     value="False" />
+            <capability name="preferredRequestEncoding"             value="ks_c_5601-1987" />
+            <capability name="preferredResponseEncoding"            value="ks_c_5601-1987" />
+        </capabilities>
+    </browser>
+
+    <browser id="InfrawareLG" parentID="SKTDevicesLG">
+        <identification>
+            <userAgent name="browserType" match="(35|15|25)" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="True" />
+            <capability name="cookies"                              value="True" />
+            <capability name="isColor"                              value="True" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+            <capability name="rendersBreaksAfterWmlInput"           value="True" />
+            <capability name="rendersWmlSelectsAsMenuCards"         value="True" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="True" />
+            <capability name="supportsEmptyStringInCookieValue"     value="False" />
+            <capability name="preferredRequestEncoding"             value="ks_c_5601-1987" />
+            <capability name="preferredResponseEncoding"            value="ks_c_5601-1987" />
+        </capabilities>
+    </browser>
+
+    <browser id="InfrawareSKY" parentID="SKTDevicesSKTT">
+        <identification>
+            <userAgent name="browserType" match="(35|15|25)" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="True" />
+            <capability name="cookies"                              value="True" />
+            <capability name="isColor"                              value="True" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+            <capability name="rendersBreaksAfterWmlInput"           value="True" />
+            <capability name="rendersWmlSelectsAsMenuCards"         value="True" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="True" />
+            <capability name="supportsEmptyStringInCookieValue"     value="False" />
+            <capability name="preferredRequestEncoding"             value="ks_c_5601-1987" />
+            <capability name="preferredResponseEncoding"            value="ks_c_5601-1987" />
+        </capabilities>
+    </browser>
+
+    <browser id="InfrawareMotorola" parentID="SKTDevicesMotorola">
+        <identification>
+            <userAgent name="browserType" match="(35|15|25)" />
+        </identification>
+        <capabilities>
+            <capability name="canInitiateVoiceCall"                 value="True" />
+            <capability name="cookies"                              value="True" />
+            <capability name="isColor"                              value="True" />
+            <capability name="optimumPageWeight"                    value="700" />
+            <capability name="preferredRenderingMime"               value="text/vnd.wap.wml" />
+            <capability name="preferredRenderingType"               value="wml12" />
+            <capability name="rendersBreaksAfterWmlInput"           value="True" />
+            <capability name="rendersWmlSelectsAsMenuCards"         value="True" />
+            <capability name="requiresFullyQualifiedRedirectUrl"    value="True" />
+            <capability name="supportsEmptyStringInCookieValue"     value="False" />
+            <capability name="preferredRequestEncoding"             value="ks_c_5601-1987" />
+            <capability name="preferredResponseEncoding"            value="ks_c_5601-1987" />
+        </capabilities>
+    </browser>
+</browsers>

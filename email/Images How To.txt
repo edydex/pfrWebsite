@@ -1,0 +1,3 @@
+Image - Name.jpg
+
+400x100 Canvas size with signature at lower left. 
